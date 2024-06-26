@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+
+ 
+
+        <div class="container">
+            <form id="createAccountForm">
+                <h2>Create User Account</h2>
+    
+                <div class="form-control">
+                    <label>full name *</label>
+                    <input type="text" name="fullname" id="fullname" onblur="CheckFullName()" placeholder="full name">
+                    <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+       
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <label>Email *</label>
+                    <input type="email" name="Email" id="Email" onblur="CheckEmail()" placeholder="email">
+                   <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <label>Password *</label>
+                    <input type="Password" name="Password" id="Password" onblur="CheckPassword()" placeholder="password">
+                   <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <label>Confirm Password *</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" onblur="CheckPasswordConfirm()" placeholder="password">
+                   <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <p> <a href="generate.html" target="_parent" id="generate">Generate Strong Password ?</a> </p>
+                </div>
+    
+                <div class="form-button">
+                  
+    
+                     <button><a href="dashboard.html" target="_parent" >Log in</a> </button>
+                    
+                </div>
+                
+            </form>
+        </div>
+        
+        <div id="content">
+
+        </div>
+        
+
+
+    <script src="app.js"></script>
+</body>
+</html>
